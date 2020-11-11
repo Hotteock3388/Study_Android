@@ -1,0 +1,5 @@
+include ':practiceintent'
+include ':bmiintentcalculate'
+include ':customanimationviewpager'
+include ':app'
+rootProject.name = "FreeWrite"

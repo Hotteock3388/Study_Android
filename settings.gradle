@@ -1,3 +1,6 @@
+include ':notification_alarm_example'
+include ':glide'
+include ':retrofit2example'
 include ':practiceintent'
 include ':bmiintentcalculate'
 include ':customanimationviewpager'

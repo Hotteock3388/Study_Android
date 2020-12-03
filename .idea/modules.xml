@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FreeWrite.iml" filepath="$PROJECT_DIR$/.idea/modules/FreeWrite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FreeWrite.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FreeWrite.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bmiintentcalculate/FreeWrite.bmiintentcalculate.iml" filepath="$PROJECT_DIR$/.idea/modules/bmiintentcalculate/FreeWrite.bmiintentcalculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/glide/FreeWrite.glide.iml" filepath="$PROJECT_DIR$/.idea/modules/glide/FreeWrite.glide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/practiceintent/FreeWrite.practiceintent.iml" filepath="$PROJECT_DIR$/.idea/modules/practiceintent/FreeWrite.practiceintent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" />
+    </modules>
+  </component>
+</project>

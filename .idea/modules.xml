@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FreeWrite.iml" filepath="$PROJECT_DIR$/.idea/modules/FreeWrite.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FreeWrite.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FreeWrite.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appusagestatistics/FreeWrite.appusagestatistics.iml" filepath="$PROJECT_DIR$/.idea/modules/appusagestatistics/FreeWrite.appusagestatistics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bmiintentcalculate/FreeWrite.bmiintentcalculate.iml" filepath="$PROJECT_DIR$/.idea/modules/bmiintentcalculate/FreeWrite.bmiintentcalculate.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/glide/FreeWrite.glide.iml" filepath="$PROJECT_DIR$/.idea/modules/glide/FreeWrite.glide.iml" />

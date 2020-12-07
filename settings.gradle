@@ -1,3 +1,4 @@
+include ':appusagestatistics'
 include ':notification_alarm_example'
 include ':glide'
 include ':retrofit2example'

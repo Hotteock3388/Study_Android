@@ -31,17 +31,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun createNotification() {
 
-
         val builder = NotificationCompat.Builder(this, "default")
+
+        val style = NotificationCompat.BigTextStyle()
+
+        style.bigText("알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트알람 세부 텍스트")
+
 
         builder.setSmallIcon(android.R.mipmap.sym_def_app_icon)
         builder.setContentTitle("알림 제목")
-        builder.setContentText("알람 세부 텍스트")
+        builder.setContentText("테스트")
+
         builder.color = Color.RED
         // 사용자가 탭을 클릭하면 자동 제거
         builder.setAutoCancel(true)
 
-        
+        builder.setStyle(style)
+
+
         // 알림 표시
         val notificationManager = this.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

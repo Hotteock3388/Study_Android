@@ -17,6 +17,7 @@ import androidx.core.graphics.drawable.IconCompat
 class MainActivity : AppCompatActivity() {
 
     var i = 0
+    var NOTIFICATIONID = 1000
     lateinit var notificationManager : NotificationManager
 
 
@@ -24,11 +25,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var cNum = 0
+
         initNotificationManager()
 
 
         findViewById<Button>(R.id.button).setOnClickListener {
-            messagingStyleNotification()
+            messagingStyleNotification(++cNum)
         }
 
     }
@@ -174,7 +177,12 @@ class MainActivity : AppCompatActivity() {
     //endregion
 
     //region Messaging Style Notification
-    fun messagingStyleNotification(){
+    fun messagingStyleNotification(clickedNum : Int){
+        var messageList = ArrayList<String>()
+
+        messageList.add("안녕?"); messageList.add("난 지금 너무 졸려..."); messageList.add("넌 지금 뭐해?"); messageList.add("달고 짠 거 먹고싶다"); messageList.add("그냥 그렇다고"); messageList.add("멍청아")
+
+
         val builder = NotificationCompat.Builder(this, "default")
 
         val userIcon1 = IconCompat.createWithResource(this, R.drawable.black_cat)
@@ -183,8 +191,16 @@ class MainActivity : AppCompatActivity() {
 
         val user1 = Person.Builder().setIcon(userIcon1).setName(userName1).build()
         val style = NotificationCompat.MessagingStyle(user1)
-        style.addMessage("안녕?", timestamp, user1)
-        style.addMessage("졸려,,,", timestamp, user1)
+
+        for( j in 0 until clickedNum ){
+            if(j < messageList.size) {
+                style.addMessage(messageList[j], timestamp, user1)
+            }
+
+        }
+
+        //style.addMessage("안녕?", timestamp, user1)
+        //style.addMessage("졸려,,,", timestamp, user1)
 
 
         builder.setSmallIcon(android.R.mipmap.sym_def_app_icon)
@@ -193,7 +209,8 @@ class MainActivity : AppCompatActivity() {
         builder.setStyle(style)
 
 
-        notificationManager.notify(i++, builder.build())
+
+        notificationManager.notify(NOTIFICATIONID, builder.build())
     }
 
     //region Notification 채널 생성 + 등록
@@ -207,6 +224,7 @@ class MainActivity : AppCompatActivity() {
         builder.setContentText("테스트")
 
         notificationManager.notify(i++, builder.build())
+
 
     }
 

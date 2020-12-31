@@ -219,7 +219,7 @@ Thumbs.db
 atlassian-ide-plugin.xml
 
 # Mongo Explorer plugin
-.idea/mongoSettings.xml
+.idea/mongoSettings.xml 
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml

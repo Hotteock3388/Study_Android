@@ -1,5 +1,8 @@
 package com.example.notificationexample
 
+import android.app.Notification
+import android.app.Notification.DEFAULT_SOUND
+import android.app.Notification.DEFAULT_VIBRATE
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -47,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationManager.createNotificationChannel(
                 //id는 말 그대로 Notification의 ID값
-                NotificationChannel("default", "Notification Test App", NotificationManager.IMPORTANCE_DEFAULT)
+                NotificationChannel("default", "Notification Test App", NotificationManager.IMPORTANCE_HIGH)
             )
             Log.d("TestLog", "create Channel")
         }else{
@@ -201,12 +204,15 @@ class MainActivity : AppCompatActivity() {
     //region Head Up Notification
     private fun headUpNotification(){
 
-        val headUpNotificationManager = this.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+        /* val headUpNotificationManager = this.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 
         headUpNotificationManager.createNotificationChannel(
             //id는 말 그대로 Notification의 ID값
             NotificationChannel("Study_Android App", "Notification Test App2", NotificationManager.IMPORTANCE_HIGH)
-        )
+        ) */
+
+        val intent = Intent(baseContext, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
 
         val fullScreenPendingIntent = PendingIntent.getActivity(baseContext, 0,
             intent, PendingIntent.FLAG_UPDATE_CURRENT)    // 2
@@ -216,13 +222,22 @@ class MainActivity : AppCompatActivity() {
 
         builder.setSmallIcon(android.R.mipmap.sym_def_app_icon)
         builder.setContentTitle("알림 제목")
+        
         builder.setContentText("테스트")
 
-        builder.priority = NotificationCompat.PRIORITY_HIGH
         builder.setFullScreenIntent(fullScreenPendingIntent, true)   // 4
+        builder.priority = NotificationCompat.PRIORITY_HIGH
+        builder.setDefaults(
+            DEFAULT_SOUND or DEFAULT_VIBRATE
+        )
+
+
+        builder.setDefaults(Notification.DEFAULT_VIBRATE)
+
+
 
         //NotificationManagerCompat.from(this).notify(i++, builder.build())
-        headUpNotificationManager.notify(i++, builder.build())
+        notificationManager.notify(i++, builder.build())
 
     }
     //endregion

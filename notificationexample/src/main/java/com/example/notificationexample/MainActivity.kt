@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.Person
 import androidx.core.graphics.drawable.IconCompat
 
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
 
         findViewById<Button>(R.id.button).setOnClickListener {
-            messagingStyleNotification(++cNum)
+            inBoxStyleNotification()
         }
 
     }
@@ -48,13 +49,13 @@ class MainActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationManager.createNotificationChannel(
                 //id는 말 그대로 Notification의 ID값
-                NotificationChannel("Study_Android App", "Notification Test App", NotificationManager.IMPORTANCE_DEFAULT)
+                NotificationChannel("Study_Android-App", "Notification Test App", NotificationManager.IMPORTANCE_DEFAULT)
             )
         }
     }
 
     //region Default Notification
-    private fun DefaultNotification() {
+    private fun defaultNotification() {
         // builder를 이용해서 Notification을 띄운다.(Context, channelID)
         val builder = NotificationCompat.Builder(this, "default")
 
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     //endregion
 
     //region Big Text Notification
-    private fun BigTextNotification() {
+    private fun bigTextNotification() {
 
         val builder = NotificationCompat.Builder(this, "default")
 
@@ -94,7 +95,7 @@ class MainActivity : AppCompatActivity() {
     //endregion
 
     //region Pending Intent Notification
-    fun PendingNotification(){
+    fun pendingNotification(){
 
         val builder = NotificationCompat.Builder(this, "default")
 
@@ -127,7 +128,7 @@ class MainActivity : AppCompatActivity() {
 
     //region Big Picture Notification
 
-    fun BigPictureNotification(){
+    fun bigPictureNotification(){
 
         val builder = NotificationCompat.Builder(this, "default")
 
@@ -212,6 +213,38 @@ class MainActivity : AppCompatActivity() {
 
         notificationManager.notify(NOTIFICATIONID, builder.build())
     }
+
+    //endregion
+
+    //region Head Up Notification
+    private fun headUpNotification(){
+
+        val headUpNotificationManager = this.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+
+        headUpNotificationManager.createNotificationChannel(
+            //id는 말 그대로 Notification의 ID값
+            NotificationChannel("Study_Android App", "Notification Test App2", NotificationManager.IMPORTANCE_HIGH)
+        )
+
+        val fullScreenPendingIntent = PendingIntent.getActivity(baseContext, 0,
+            intent, PendingIntent.FLAG_UPDATE_CURRENT)    // 2
+
+
+        val builder = NotificationCompat.Builder(this, "default")
+
+        builder.setSmallIcon(android.R.mipmap.sym_def_app_icon)
+        builder.setContentTitle("알림 제목")
+        builder.setContentText("테스트")
+
+        builder.priority = NotificationCompat.PRIORITY_HIGH
+        builder.setFullScreenIntent(fullScreenPendingIntent, true)   // 4
+
+        //NotificationManagerCompat.from(this).notify(i++, builder.build())
+        headUpNotificationManager.notify(i++, builder.build())
+
+    }
+
+    //endregion
 
     //region Notification 채널 생성 + 등록
 

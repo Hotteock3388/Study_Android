@@ -7,6 +7,7 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
@@ -18,7 +19,6 @@ import androidx.core.graphics.drawable.IconCompat
 class MainActivity : AppCompatActivity() {
 
     var i = 0
-    var NOTIFICATIONID = 1000
     lateinit var notificationManager : NotificationManager
 
 
@@ -26,13 +26,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var cNum = 0
-
         initNotificationManager()
 
 
         findViewById<Button>(R.id.button).setOnClickListener {
-            inBoxStyleNotification()
+            headUpNotification()
         }
 
     }
@@ -49,8 +47,11 @@ class MainActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationManager.createNotificationChannel(
                 //id는 말 그대로 Notification의 ID값
-                NotificationChannel("Study_Android-App", "Notification Test App", NotificationManager.IMPORTANCE_DEFAULT)
+                NotificationChannel("default", "Notification Test App", NotificationManager.IMPORTANCE_DEFAULT)
             )
+            Log.d("TestLog", "create Channel")
+        }else{
+            Log.d("TestLog", "SDK VERSION FAIL")
         }
     }
 
@@ -127,7 +128,6 @@ class MainActivity : AppCompatActivity() {
     //endregion
 
     //region Big Picture Notification
-
     fun bigPictureNotification(){
 
         val builder = NotificationCompat.Builder(this, "default")
@@ -152,8 +152,7 @@ class MainActivity : AppCompatActivity() {
         // id값은 정의해야하는 각 알림의 고유한 int값
         notificationManager.notify(i++, builder.build())
     }
-
-//endregion
+    //endregion
 
     //region Inbox Style Notification
     fun inBoxStyleNotification(){
@@ -173,17 +172,10 @@ class MainActivity : AppCompatActivity() {
 
         notificationManager.notify(i++, builder.build())
     }
-
-
     //endregion
 
     //region Messaging Style Notification
-    fun messagingStyleNotification(clickedNum : Int){
-        var messageList = ArrayList<String>()
-
-        messageList.add("안녕?"); messageList.add("난 지금 너무 졸려..."); messageList.add("넌 지금 뭐해?"); messageList.add("달고 짠 거 먹고싶다"); messageList.add("그냥 그렇다고"); messageList.add("멍청아")
-
-
+    fun messagingStyleNotification(){
         val builder = NotificationCompat.Builder(this, "default")
 
         val userIcon1 = IconCompat.createWithResource(this, R.drawable.black_cat)
@@ -192,16 +184,8 @@ class MainActivity : AppCompatActivity() {
 
         val user1 = Person.Builder().setIcon(userIcon1).setName(userName1).build()
         val style = NotificationCompat.MessagingStyle(user1)
-
-        for( j in 0 until clickedNum ){
-            if(j < messageList.size) {
-                style.addMessage(messageList[j], timestamp, user1)
-            }
-
-        }
-
-        //style.addMessage("안녕?", timestamp, user1)
-        //style.addMessage("졸려,,,", timestamp, user1)
+        style.addMessage("안녕?", timestamp, user1)
+        style.addMessage("졸려,,,", timestamp, user1)
 
 
         builder.setSmallIcon(android.R.mipmap.sym_def_app_icon)
@@ -210,10 +194,8 @@ class MainActivity : AppCompatActivity() {
         builder.setStyle(style)
 
 
-
-        notificationManager.notify(NOTIFICATIONID, builder.build())
+        notificationManager.notify(i++, builder.build())
     }
-
     //endregion
 
     //region Head Up Notification
@@ -243,12 +225,10 @@ class MainActivity : AppCompatActivity() {
         headUpNotificationManager.notify(i++, builder.build())
 
     }
-
     //endregion
 
     //region Notification 채널 생성 + 등록
-
-    fun basecode(){
+    fun baseCode(){
 
         val builder = NotificationCompat.Builder(this, "default")
 
@@ -258,8 +238,6 @@ class MainActivity : AppCompatActivity() {
 
         notificationManager.notify(i++, builder.build())
 
-
     }
-
     //endregion
 }

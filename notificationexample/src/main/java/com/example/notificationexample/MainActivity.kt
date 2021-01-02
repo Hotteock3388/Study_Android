@@ -222,7 +222,7 @@ class MainActivity : AppCompatActivity() {
 
         builder.setSmallIcon(android.R.mipmap.sym_def_app_icon)
         builder.setContentTitle("알림 제목")
-        
+
         builder.setContentText("테스트")
 
         builder.setFullScreenIntent(fullScreenPendingIntent, true)   // 4

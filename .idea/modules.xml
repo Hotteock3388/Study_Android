@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/notificationexample/FreeWrite.notificationexample.iml" filepath="$PROJECT_DIR$/.idea/modules/notificationexample/FreeWrite.notificationexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/practiceintent/FreeWrite.practiceintent.iml" filepath="$PROJECT_DIR$/.idea/modules/practiceintent/FreeWrite.practiceintent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" filepath="$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" />
     </modules>
   </component>
 </project>

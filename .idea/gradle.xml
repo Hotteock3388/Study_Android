@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/notificationexample" />
             <option value="$PROJECT_DIR$/practiceintent" />
             <option value="$PROJECT_DIR$/retrofit2example" />
+            <option value="$PROJECT_DIR$/swipelayoutexample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

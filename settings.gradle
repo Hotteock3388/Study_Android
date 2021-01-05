@@ -1,3 +1,4 @@
+include ':chartexample'
 include ':swipelayoutexample'
 include ':notificationexample'
 include ':databindingexample'

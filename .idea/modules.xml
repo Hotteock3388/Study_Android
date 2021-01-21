@@ -5,14 +5,18 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FreeWrite.iml" filepath="$PROJECT_DIR$/.idea/modules/FreeWrite.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FreeWrite.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FreeWrite.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appusagestatistics/FreeWrite.appusagestatistics.iml" filepath="$PROJECT_DIR$/.idea/modules/appusagestatistics/FreeWrite.appusagestatistics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bitmapandvarbinary/FreeWrite.bitmapandvarbinary.iml" filepath="$PROJECT_DIR$/.idea/modules/bitmapandvarbinary/FreeWrite.bitmapandvarbinary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bmiintentcalculate/FreeWrite.bmiintentcalculate.iml" filepath="$PROJECT_DIR$/.idea/modules/bmiintentcalculate/FreeWrite.bmiintentcalculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.iml" filepath="$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/databindingexample/FreeWrite.databindingexample.iml" filepath="$PROJECT_DIR$/.idea/modules/databindingexample/FreeWrite.databindingexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/glide/FreeWrite.glide.iml" filepath="$PROJECT_DIR$/.idea/modules/glide/FreeWrite.glide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.iml" filepath="$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification_alarm_example/FreeWrite.notification_alarm_example.iml" filepath="$PROJECT_DIR$/.idea/modules/notification_alarm_example/FreeWrite.notification_alarm_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/notificationexample/FreeWrite.notificationexample.iml" filepath="$PROJECT_DIR$/.idea/modules/notificationexample/FreeWrite.notificationexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/practiceintent/FreeWrite.practiceintent.iml" filepath="$PROJECT_DIR$/.idea/modules/practiceintent/FreeWrite.practiceintent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.iml" filepath="$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" filepath="$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" />
     </modules>
   </component>

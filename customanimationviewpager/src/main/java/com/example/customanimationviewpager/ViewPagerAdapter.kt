@@ -22,6 +22,7 @@ class ViewPagerAdapter(private val context: Context) : PagerAdapter() {
         "2번 페이지",
         "3번 페이지"
     )
+
     val colorArray = arrayOf(
         "#FFFF5722",
         "#FF00BCD4",

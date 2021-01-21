@@ -27,20 +27,4 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
-    internal class MoviePagerAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm!!) {
-        var items: ArrayList<Fragment> = ArrayList<Fragment>()
-        override fun getItem(i: Int): Fragment {   // 아이템 리턴
-            return items[i]
-        }
-
-        override fun getCount(): Int {
-            return items.size
-        }
-
-        // 추가
-        fun addItem(item: Fragment) {
-            items.add(item)
-        }
-    }
 }

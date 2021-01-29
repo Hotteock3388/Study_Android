@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
         val r = Runnable {
             var cnt = 1
-            for(i in 0..1000){
+            for(i in 0..10){
 
                 studentDB?.studentDAO()?.insert(Student(cnt++, "$i 번째 김효선",19, "남"))
                 studentDB?.studentDAO()?.insert(Student(cnt++, "$i 번째 김상현",19, "남"))

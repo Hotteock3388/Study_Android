@@ -1,3 +1,4 @@
+include ':broadcastreceiverexample'
 include ':roomexample'
 include ':bitmapandvarbinary'
 include ':listviewtest'

@@ -1,20 +1,39 @@
 package com.example.freewrite
 
-import android.content.ServiceConnection
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager.widget.ViewPager
+import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val arr = ArrayList<String>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        makeArr()
+
+        initRecyclerView()
+
+
     }
 
+    private fun initRecyclerView() {
+        val adapter = RecyclerViewAdpater(arr)
+        recyclerView.adapter = adapter
 
-    override fun unbindService(conn: ServiceConnection) {
-        super.unbindService(conn)
+        recyclerView.layoutManager = GridLayoutManager(this, 2)
+
+        adapter.notifyDataSetChanged()
+    }
+
+    private fun makeArr() {
+        for(i in 1 .. 10) {
+            arr.add("2101 김상현")
+        }
+
     }
 }

@@ -19,8 +19,11 @@
             <option value="$PROJECT_DIR$/chartexample" />
             <option value="$PROJECT_DIR$/customanimationviewpager" />
             <option value="$PROJECT_DIR$/databindingexample" />
+            <option value="$PROJECT_DIR$/foregroundservice" />
             <option value="$PROJECT_DIR$/glide" />
+            <option value="$PROJECT_DIR$/immortalservice" />
             <option value="$PROJECT_DIR$/listviewtest" />
+            <option value="$PROJECT_DIR$/lockscreen" />
             <option value="$PROJECT_DIR$/notification_alarm_example" />
             <option value="$PROJECT_DIR$/notificationexample" />
             <option value="$PROJECT_DIR$/practiceintent" />

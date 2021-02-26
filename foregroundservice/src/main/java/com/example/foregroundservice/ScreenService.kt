@@ -12,26 +12,27 @@ import java.lang.Thread.sleep
 
 class ScreenService: Service() {
 
-    private lateinit var mReceiver: ScreenReceiver
-    private val CHANNEL_ID = "testNoti"
+    private lateinit var mReceiver: CustomReceiver
+    private val CHANNEL_ID = "Foreground_Test"
+    private val FOREGROUND_ID = 110492
     override fun onBind(intent: Intent?): IBinder? {
         return null
     }
 
     override fun onCreate() {
         super.onCreate()
-        mReceiver = ScreenReceiver()
+        mReceiver = CustomReceiver()
         val filter = IntentFilter(Intent.ACTION_SCREEN_OFF)
         registerReceiver(mReceiver, filter)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         super.onStartCommand(intent, flags, startId)
-        repeatLog()
+        //repeatLog()
         if (intent != null) {
             if (intent.action == null) {
                 if (mReceiver == null) {
-                    mReceiver = ScreenReceiver()
+                    mReceiver = CustomReceiver()
                     val filter = IntentFilter(Intent.ACTION_SCREEN_OFF)
                     registerReceiver(mReceiver, filter)
                 }
@@ -46,28 +47,31 @@ class ScreenService: Service() {
         val t = Thread(Runnable {
             for (i in 0 until 100000){
                 sleep(500)
-                Log.d("TestLog", "$i")
+                Log.d("TestLog", "LockScreen $i")
             }
         })
         t.start()
     }
 
     private fun startForegroundService(){
+
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
         builder.setSmallIcon(R.mipmap.ic_launcher)
-        builder.setContentTitle("포그라운드 서비스 테스트")
-        builder.setContentText("포그라운드 서비스 테스트 중")
+        builder.setContentTitle("LockScreen Test")
+        builder.setContentText("Foreground 서비스 실행중")
 
+        //PendingIntent를 사용해서 Notification을 누르면 MainActivity가 켜지게 함
         val notiIntent = Intent(this, MainActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(this, 0, notiIntent, 0)
         builder.setContentIntent(pendingIntent)
+
+        //Notification Channel이 Oreo(SDK V.26)이후부터 생김
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.O){
             val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, "기본 채널", NotificationManager.IMPORTANCE_DEFAULT))
         }
-        val noti = builder.build()
 
-        startForeground(142, noti)
+        startForeground(FOREGROUND_ID, builder.build())
     }
 
     override fun onDestroy() {

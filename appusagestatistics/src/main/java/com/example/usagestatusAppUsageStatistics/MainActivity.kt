@@ -66,8 +66,6 @@ class MainActivity : AppCompatActivity() {
             //textView.text = getTopPackageName(applicationContext)
         }
 
-
-
     }
 
     private fun initListView() {
@@ -89,6 +87,7 @@ class MainActivity : AppCompatActivity() {
 
         val usageStatsManager =
             getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager // 2
+
         return usageStatsManager.queryUsageStats(
             UsageStatsManager.INTERVAL_DAILY, cal.timeInMillis, System.currentTimeMillis() // 3
         )

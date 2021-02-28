@@ -29,6 +29,7 @@ class ScreenService: Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         super.onStartCommand(intent, flags, startId)
         //repeatLog()
+
         if (intent != null) {
             if (intent.action == null) {
                 if (mReceiver == null) {

@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     var time = ""
     var date = ""
 
-    val timeFormat = DateTimeFormatter.ofPattern("HH:mm")
+    val timeFormat = DateTimeFormatter.ofPattern("hh:mm")
     val dateFormat = DateTimeFormatter.ofPattern("MM월 dd일")
 
     override fun onCreate(savedInstanceState: Bundle?) {

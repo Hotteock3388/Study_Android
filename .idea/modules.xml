@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2example/FreeWrite.retrofit2example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.iml" filepath="$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" filepath="$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.iml" />
     </modules>
   </component>
 </project>

@@ -1,16 +1,17 @@
 package com.example.freewrite
 
-import android.content.Intent
-import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.layout_mange_student_item.view.*
 import java.util.ArrayList
 
-class RecyclerViewAdpater(var dataList: ArrayList<String>): RecyclerView.Adapter<RecyclerViewAdpater.ViewHolder>() {
+class RecyclerViewAdapter(dL: MutableLiveData<ArrayList<String>>): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+
+    var dataList = dL.value!!
 
     override fun getItemCount(): Int {
         return dataList.size

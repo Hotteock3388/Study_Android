@@ -20,3 +20,4 @@ include ':customanimationviewpager'
 include ':app'
 rootProject.name = "FreeWrite"
 include ':coroutine'
+include ':fragmentnavigation'

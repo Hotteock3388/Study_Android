@@ -19,3 +19,4 @@ include ':bmiintentcalculate'
 include ':customanimationviewpager'
 include ':app'
 rootProject.name = "FreeWrite"
+include ':coroutine'

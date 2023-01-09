@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/img_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:background="@color/black"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/textViewButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:text="Hello World!"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

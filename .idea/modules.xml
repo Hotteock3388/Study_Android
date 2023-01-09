@@ -24,10 +24,18 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/chartexample/FreeWrite.chartexample.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.iml" filepath="$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.main.iml" filepath="$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/compose/FreeWrite.compose.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/FreeWrite.coroutine.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.iml" filepath="$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.main.iml" filepath="$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/crawling/FreeWrite.crawling.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.main.iml" filepath="$PROJECT_DIR$/.idea/modules/customanimationviewpager/FreeWrite.customanimationviewpager.main.iml" />
@@ -76,6 +84,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/FreeWrite.viewmodel.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.iml" filepath="$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/windowblurs/FreeWrite.windowblurs.unitTest.iml" />
     </modules>
   </component>
 </project>

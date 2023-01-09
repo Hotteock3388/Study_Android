@@ -21,3 +21,6 @@ include ':app'
 rootProject.name = "FreeWrite"
 include ':coroutine'
 include ':fragmentnavigation'
+include ':crawling'
+include ':windowblurs'
+include ':compose'

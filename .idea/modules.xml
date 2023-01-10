@@ -61,6 +61,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.main.iml" filepath="$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/listviewtest/FreeWrite.listviewtest.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.iml" filepath="$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.main.iml" filepath="$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/liveblurview/FreeWrite.liveblurview.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lockscreen/FreeWrite.lockscreen.iml" filepath="$PROJECT_DIR$/.idea/modules/lockscreen/FreeWrite.lockscreen.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification_alarm_example/FreeWrite.notification_alarm_example.iml" filepath="$PROJECT_DIR$/.idea/modules/notification_alarm_example/FreeWrite.notification_alarm_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/notificationexample/FreeWrite.notificationexample.iml" filepath="$PROJECT_DIR$/.idea/modules/notificationexample/FreeWrite.notificationexample.iml" />

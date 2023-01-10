@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
                         BlurImage{
                             AsyncImage( //coil or imageComposable
                                 modifier = Modifier.fillMaxWidth().fillMaxHeight(),
-                                model = ImageRequest.Builder(LocalContext.current).data(R.drawable.img_device_capture).build(),
+                                model = ImageRequest.Builder(LocalContext.current).data(R.drawable.device_img).build(),
                                 contentDescription = null,
                                 contentScale = ContentScale.Fit // blur가 짤린다면 넣어보세요
                             )

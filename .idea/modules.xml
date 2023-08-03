@@ -80,6 +80,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/roomexample/FreeWrite.roomexample.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.iml" filepath="$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.main.iml" filepath="$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/stepsensor/FreeWrite.stepsensor.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" filepath="$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/swipelayoutexample/FreeWrite.swipelayoutexample.main.iml" />
